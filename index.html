@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./source/css/index.css" />
+        <link rel="shortcut icon" href="./source/img/artworks-000248908839-wlug27-t500x500.jpg" type="image/x-icon" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-eUBx7lLjRvjQRUdVf/R6Q3q7OuZrKw43/dVYYO6/H3/gs++4kyWbc+zysdWeHcJjG+ZIfm8S8MhKbEJfTajxJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-X+LgKvJ/gsxnH8c4cmFq3+hzBoGAh0WzLlo/lSJw+M0PJlvMvGxJzKt+pp2QXAWo0pt+Za6/ILshSZYw/6JfKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha512-eB9V7CsfIFSC/dB/T7rB3i3uV6dq2yP8uL6RHy9XJK16vZa+p/n1IkkY7c2Jd0o5P0o5yowu5wm5UE0X5JvORw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <title>Anime</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="logo">
+                        <a href="#"><img src="./source/img/logo.png" alt="" /></a>
+                    </div>
+                    <div class="header-nav">
+                        <ul class="homepage">
+                            <li class="active"><a href="">Homepage</a></li>
+                            <li class="categories">
+                                <a href="">Categories <i class="bx bx-chevron-down"></i> </a>
+                                <ul class="dropdown">
+                                    <li id="scrollToTrending"><a href="">Trending Now</a></li>
+                                    <li id="scrollToPopular"><a href="">Popular</a></li>
+                                    <li id="scrollToRecently"><a href="">Recently</a></li>
+                                    <li id="scrollToLiveAction"><a href="">Live Action</a></li>
+                                </ul>
+                            </li>
+                            <li class="our-blog"><a href="#">Our Blog</a></li>
+                            <li class="contacts"><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-right">
+                        <i class="bx bx-search"></i>
+                        <i class="bx bx-user login"></i>
+                    </div>
+                    <div class="mobile-menu-wrap">
+                        <span>MENU</span>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="dropdown-mobile">
+                        <ul>
+                            <li class="dr-m"><a href="">Homepage</a></li>
+                            <li class="categories-mobile">
+                                <a href="">Categories <i class="bx bx-chevron-down"></i></a>
+
+                                <ul class="dropdown-moblie-nav">
+                                    <li class="dr-m-nav" id="scrollToTrendingM"><a href="">Trending Now</a></li>
+                                    <li class="dr-m-nav" id="scrollToPopularM"><a href="">Popular</a></li>
+                                    <li class="dr-m-nav" id="scrollToRecentlyM"><a href="">Recently</a></li>
+                                    <li class="dr-m-nav" id="scrollToLiveActionM"><a href="">Live Action</a></li>
+                                </ul>
+                            </li>
+                            <li class="dr-m"><a href="">Our Blog</a></li>
+                            <li class="dr-m"><a href="">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <div class="modal-login">
+                <div class="modal-content">
+                    <span class="close">×</span>
+                    <div class="login-and-res">
+                        <div class="login">
+                            <h3>Login</h3>
+                            <div class="email">
+                                <span><i class="bx bxs-envelope"></i></span>
+                                <input placeholder="Email address" type="email" name="" id="" />
+                            </div>
+                            <div class="pass">
+                                <span><i class="bx bxs-lock"></i></span>
+                                <input placeholder="Password" type="password" name="" id="" />
+                            </div>
+                            <div class="btn-login">
+                                <button>LOGIN NOW</button>
+                                <a href="" class="forget">Forgot Your Password?</a>
+                            </div>
+                        </div>
+
+                        <div class="res">
+                            <h3>Dont’t Have An Account?</h3>
+                            <a href="">Register Now</a>
+                        </div>
+                    </div>
+                    <div class="login-social">
+                        <span>OR</span>
+                        <ul>
+                            <li>
+                                <a href=""> <i class="bx bxl-facebook"></i> Sign in With Facebook</a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="bx bxl-google"></i> Sign in With Google</a>
+                            </li>
+                            <li>
+                                <a href=""> <i class="bx bxl-twitter"></i> Sign in With Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fzf-not-found">
+                <span class="close">×</span>
+                <img src="./source/img/3828537.jpg" alt="" />
+                <p>Sorry, We don't have money to update Server</p>
+            </div>
+            <!-- Hero Begin -->
+            <section class="hero">
+                <div class="hero-slider">
+                    <div class="sliders" idx="0">
+                        <img class="slider" src="./source/img/Slider/attack_on_titan___by_goruditai_d6cmmk4-fullview.jpg" alt="" />
+                        <div class="hero-text">
+                            <label class="catelogy" idx="0">Adventure</label>
+                            <h2>Attact On Titan</h2>
+                            <p>Hàng trăm năm về trước, loài người gần như bị diệt vong bởi Titan - một sinh vật khổng lồ, không có trí thông minh và tồi tệ nhất là dường như chúng ăn tươi nuốt sống con người chỉ vì niềm vui chứ không phải vì nhu cầu sinh tồn</p>
+                            <a href="#">
+                                <span>Watch Now</span>
+                                <i class="bx bx-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliders" idx="1">
+                        <img class="slider" src="./source/img/Slider/bakugo_katsuki_wallpaper_by_muztnafi_dcylgwe-fullview.jpg" alt="" />
+                        <div class="hero-text">
+                            <label class="catelogy" idx="1">Science Fiction</label>
+                            <h2>My Hero Academia</h2>
+                            <p>Câu chuyện kể về hành trình Deku trở thành anh hùng tuyệt vời nhất.</p>
+                            <a href="#">
+                                <span>Watch Now</span>
+                                <i class="bx bx-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliders" idx="2">
+                        <img class="slider" src="./source/img/Slider/berserk_of_gluttony_wallpaper_3_by_muztnafi_deelqdk-pre.jpg" alt="" />
+                        <div class="hero-text">
+                            <label class="catelogy" idx="2">Adventure</label>
+                            <h2>Berserk of Gluttony</h2>
+                            <p>Trong thế giới này tồn tại hai loại người. Những người có năng lực đặc biệt và những kẻ không có...</p>
+                            <a href="#">
+                                <span>Watch Now</span>
+                                <i class="bx bx-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliders" idx="3">
+                        <img class="slider" src="./source/img/Slider/doctor_stone_wallpaper_by_mizoresyo_ddwzu0v-pre.jpg" alt="" />
+                        <div class="hero-text">
+                            <label class="catelogy" idx="3">Adventure</label>
+                            <h2>Dr. Stone</h2>
+                            <p>Vào một ngày đẹp trời nọ, như bao ngày bình thường khác trên thế giới. Khi các học sinh vẫn cắp sách đến trường, vẫn thí nghiệm trong phòng lab, vẫn gọi nhau ra để...</p>
+                            <a href="#">
+                                <span>Watch Now</span>
+                                <i class="bx bx-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliders" idx="4">
+                        <img class="slider" src="./source/img/Slider/jujutsu_kaisen_megumi_fushiguro_wallpaper_by_muztnafi_degaq2q-pre.jpg" alt="" />
+                        <div class="hero-text">
+                            <label class="catelogy" idx="4">Adventure</label>
+                            <h2>Jujutsu Kaisen</h2>
+                            <p>Cùng theo chân Itadori Yuuji, cậu thiếu niên mang năng lực thể chất phi thường.</p>
+                            <a href="#">
+                                <span>Watch Now</span>
+                                <i class="bx bx-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sliders" idx="5">
+                        <img class="slider" src="./source/img/Slider/violet_evergarden_by_muztnafi_dcdjb49-fullview.jpg" alt="" />
+                        <div class="hero-text">
+                            <label class="catelogy" idx="5">Adventure</label>
+                            <h2>Violet Evergarden</h2>
+                            <p>Nhiều năm sau chiến tranh, "Búp bê ký ức" Violet Evergarden vẫn mãi nhớ về Thiếu tá Gilbert. Một ngày nọ</p>
+                            <a href="#">
+                                <span>Watch Now</span>
+                                <i class="bx bx-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-change" id="next">
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+                <div class="btn-change" id="prev">
+                    <i class="bx bx-chevron-left"></i>
+                </div>
+                <div class="change-img">
+                    <button class="active" idx="0"></button>
+                    <button idx="1"></button>
+                    <button idx="2"></button>
+                    <button idx="3"></button>
+                    <button idx="4"></button>
+                    <button idx="5"></button>
+                </div>
+            </section>
+            <!-- End hero -->
+
+            <!-- Product Begin -->
+            <section class="product">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="trending-product mb-50">
+                            <div class="header">
+                                <div class="section-title">
+                                    <h4 id="trending">Trending Now</h4>
+                                </div>
+                                <div class="btn-view-all">
+                                    <a href="#" class="primary-btn"
+                                        >View all
+                                        <i class="bx bx-right-arrow-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="view-products">
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Attack On Titan Season 4 (Final Season).webp" alt="" />
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa-solid fa-comment"></i>11</div>
+                                        <div class="view"><i class="fa-solid fa-eye"></i>9141</div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Attack On Titan Season 4 (Final Season)</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Thanh Gươm Diệt Quỷ.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">74 / 90</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>3.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>345.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Thanh Gươm Diệt Quỷ</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Naruto.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">32 / 32</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Naruto</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Tôi Đã Chuyển Sinh Thành Slime.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">78 / 78</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Tôi Đã Chuyển Sinh Thành Slime</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Takt op.Destiny.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">87 / ?</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Takt op.Destiny</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Zombie Land Saga Revenge.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">3.422 / 3.422</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Zombie Land Saga Revenge</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Đêm Định Mệnh Vô Hạn Kiếm Giới.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">563 / 563</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Đêm Định Mệnh Vô Hạn Kiếm Giới</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Thanh Gươm Diệt Quỷ.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">23 / 23</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Thanh Gươm Diệt Quỷ</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Lớp Học Ám Sát.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">54 / 54</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Lớp Học Ám Sát</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Diệt Slime suốt 300 năm, tôi level MAX lúc nào chẳng hay.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">78 / 78</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Diệt Slime suốt 300 năm, tôi level MAX lúc nào chẳng hay</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Deer Squad Season 2 Part 1.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">91 / 91</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Deer Squad Season 2 Part 1</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Ngạ Quỷ Vùng Tokyo .webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">57 / 57</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Ngạ Quỷ Vùng Tokyo</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Bắt Đầu Tỏa Sáng Từ Hôm Nay.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">11 / 11</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Bắt Đầu Tỏa Sáng Từ Hôm Nay</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-product mb-50">
+                            <div class="header">
+                                <div class="section-title">
+                                    <h4 id="popular">Popular Show</h4>
+                                </div>
+                                <div class="btn-view-all">
+                                    <a href="#" class="primary-btn"
+                                        >View all
+                                        <i class="bx bx-right-arrow-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="view-products">
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Tôi Đã Chuyển Sinh Thành Slime 2.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">32 / 32</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Tôi Đã Chuyển Sinh Thành Slime 2</a></h5>
+                                    </div>
+                                </div>
+
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Bảy Viên Ngọc Rồng Siêu Cấp.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">3.422 / 3.422</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Bảy Viên Ngọc Rồng Siêu Cấp</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Đêm Định Mệnh Vô Hạn Kiếm Giới.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">563 / 563</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Đêm Định Mệnh Vô Hạn Kiếm Giới</a></h5>
+                                    </div>
+                                </div>
+
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/FATE Zero.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">78 / 78</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">FATE Zero</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Dr.STONE Season 3.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">57 / 57</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Dr.STONE Season 3</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Thanh Gươm Diệt Quỷ.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">11 / 11</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Thanh Gươm Diệt Quỷ</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recently-added-show mb-50">
+                            <div class="header">
+                                <div class="section-title">
+                                    <h4 id="recently">RECENTLY SHOWS</h4>
+                                </div>
+                                <div class="btn-view-all">
+                                    <a href="#" class="primary-btn"
+                                        >View all
+                                        <i class="bx bx-right-arrow-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="view-products">
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Naruto.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">32 / 32</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Naruto</a></h5>
+                                    </div>
+                                </div>
+
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Zombie Land Saga Revenge.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">3.422 / 3.422</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Zombie Land Saga Revenge</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Đêm Định Mệnh Vô Hạn Kiếm Giới.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">563 / 563</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Đêm Định Mệnh Vô Hạn Kiếm Giới</a></h5>
+                                    </div>
+                                </div>
+
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Diệt Slime suốt 300 năm, tôi level MAX lúc nào chẳng hay.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">78 / 78</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Diệt Slime suốt 300 năm, tôi level MAX lúc nào chẳng hay</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Ngạ Quỷ Vùng Tokyo .webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">57 / 57</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Ngạ Quỷ Vùng Tokyo</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Bắt Đầu Tỏa Sáng Từ Hôm Nay.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">11 / 11</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Bắt Đầu Tỏa Sáng Từ Hôm Nay</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-action mb-50">
+                            <div class="header">
+                                <div class="section-title">
+                                    <h4 id="live-action">LIVE ACTION</h4>
+                                </div>
+                                <div class="btn-view-all">
+                                    <a href="#" class="primary-btn"
+                                        >View all
+                                        <i class="bx bx-right-arrow-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="view-products">
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/dororo-live-action.jpg" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">32 / 32</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Dororo Live Action</a></h5>
+                                    </div>
+                                </div>
+
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Girl Gun Lady.jpg" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">3.422 / 3.422</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Girl Gun Lady</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Giả Kim Thuật Sư.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">563 / 563</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Giả Kim Thuật Sư</a></h5>
+                                    </div>
+                                </div>
+
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Lớp học ám sát-live-action.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">78 / 78</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Lớp học ám sát Live Action</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Vạn Giới Kỳ Duyên.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">57 / 57</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Vạn Giới Kỳ Duyên</a></h5>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="product-item">
+                                        <img src="./source/img/ProductItem/Siêu đạo chích Lupin đệ tam.webp" alt="" />
+                                        <div class="sub">
+                                            <div class="ep">11 / 11</div>
+                                            <div class="comment"><i class="fa-solid fa-comment"></i>1.632</div>
+                                            <div class="view"><i class="fa-solid fa-eye"></i>23.141</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Siêu đạo chích Lupin đệ tam</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="top-views">
+                            <div class="section-title">
+                                <h4>Top Views</h4>
+                            </div>
+                            <ul class="filter-controls">
+                                <li class="active">Day</li>
+                                <li>Week</li>
+                                <li>Month</li>
+                                <li>Year</li>
+                            </ul>
+                        </div>
+                        <div class="filter__gallery">
+                            <div class="product-item-view">
+                                <img src="./source/img/ProductItem/Siêu đạo chích Lupin đệ tam.webp" alt="" />
+                                <div class="ep">18 / 18</div>
+                                <div class="view"><i class="fa-solid fa-eye"></i>9141</div>
+                                <h5><a href="">Siêu đạo chích Lupin đệ tam</a></h5>
+                            </div>
+                        </div>
+                        <div class="filter__gallery">
+                            <div class="product-item-view">
+                                <img src="./source/img/ProductItem/Thanh Gươm Diệt Quỷ.webp" alt="" />
+                                <div class="ep">83 / 198</div>
+                                <div class="view"><i class="fa-solid fa-eye"></i>4.141</div>
+                                <h5><a href="">Thanh Gươm Diệt Quỷ</a></h5>
+                            </div>
+                        </div>
+                        <div class="filter__gallery">
+                            <div class="product-item-view">
+                                <img src="./source/img/ProductItem/RE-MAIN.webp" alt="" />
+                                <div class="ep">31 / 78</div>
+                                <div class="view"><i class="fa-solid fa-eye"></i>39.431</div>
+                                <h5><a href="">RE MAIN</a></h5>
+                            </div>
+                        </div>
+                        <div class="filter__gallery">
+                            <div class="product-item-view">
+                                <img src="./source/img/ProductItem/Tôi Đã Chuyển Sinh Thành Slime.webp" alt="" />
+                                <div class="ep">24 / 24</div>
+                                <div class="view"><i class="fa-solid fa-eye"></i>832.454</div>
+                                <h5><a href="">Tôi Đã Chuyển Sinh Thành Slime</a></h5>
+                            </div>
+                        </div>
+                        <div class="filter__gallery">
+                            <div class="product-item-view">
+                                <img src="./source/img/ProductItem/Takt op.Destiny.webp" alt="" />
+                                <div class="ep">32 / 192</div>
+                                <div class="view"><i class="fa-solid fa-eye"></i>324</div>
+                                <h5><a href="">Takt op.Destiny</a></h5>
+                            </div>
+                        </div>
+                        <div class="filter__gallery">
+                            <div class="product-item-view">
+                                <img src="./source/img/ProductItem/Kaguya-sama.webp" alt="" />
+                                <div class="ep">342 / 362</div>
+                                <div class="view"><i class="fa-solid fa-eye"></i>324</div>
+                                <h5><a href="">Kaguya-sama</a></h5>
+                            </div>
+                        </div>
+                        <div class="filter__gallery">
+                            <div class="product-item-view">
+                                <img src="./source/img/ProductItem/Đêm Định Mệnh Vô Hạn Kiếm Giới.webp" alt="" />
+                                <div class="ep">13 / 13</div>
+                                <div class="view"><i class="fa-solid fa-eye"></i>5.321</div>
+                                <h5><a href="">Đêm Định Mệnh Vô Hạn Kiếm Giới</a></h5>
+                            </div>
+                        </div>
+                        <div class="filter__gallery mb-50">
+                            <div class="product-item-view">
+                                <img src="./source/img/ProductItem/Lớp Học Ám Sát.webp" alt="" />
+                                <div class="ep">45 / 57</div>
+                                <div class="view"><i class="fa-solid fa-eye"></i>45.214</div>
+                                <h5><a href="">Lớp Học Ám Sát</a></h5>
+                            </div>
+                        </div>
+                        <div class="new-cmt">
+                            <div class="section-title">
+                                <h4>NEW COMMENT</h4>
+                            </div>
+                            <div class="product-sidebar-cmt-item">
+                                <div class="pic">
+                                    <img src="./source/img/ProductItem/Đêm Định Mệnh Vô Hạn Kiếm Giới.webp" alt="" />
+                                </div>
+                                <div class="text">
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Đêm Định Mệnh Vô Hạn Kiếm Giới</a></h5>
+                                        <div class="product-item-view"><i class="fa-solid fa-eye"></i>23.141 Viewes</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-sidebar-cmt-item">
+                                <div class="pic">
+                                    <img src="./source/img/ProductItem/Tinh Võ Thần Quyết.webp" alt="" />
+                                </div>
+                                <div class="text">
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Tinh Võ Thần Quyết</a></h5>
+                                        <div class="product-item-view"><i class="fa-solid fa-eye"></i>23.141 Viewes</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-sidebar-cmt-item">
+                                <div class="pic">
+                                    <img src="./source/img/ProductItem/Diệt Slime suốt 300 năm, tôi level MAX lúc nào chẳng hay.webp" alt="" />
+                                </div>
+                                <div class="text">
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Diệt Slime suốt 300 năm, tôi level MAX lúc nào chẳng hay</a></h5>
+                                        <div class="product-item-view"><i class="fa-solid fa-eye"></i>23.141 Viewes</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-sidebar-cmt-item">
+                                <div class="pic">
+                                    <img src="./source/img/ProductItem/Bắt Đầu Tỏa Sáng Từ Hôm Nay.webp" alt="" />
+                                </div>
+                                <div class="text">
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Bắt Đầu Tỏa Sáng Từ Hôm Nay</a></h5>
+                                        <div class="product-item-view"><i class="fa-solid fa-eye"></i>23.141 Viewes</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-sidebar-cmt-item">
+                                <div class="pic">
+                                    <img src="./source/img/ProductItem/Dr.STONE Season 3.webp" alt="" />
+                                </div>
+                                <div class="text">
+                                    <div class="product-item-text">
+                                        <ul>
+                                            <li>Action</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Dr.STONE Season 3</a></h5>
+                                        <div class="product-item-view"><i class="fa-solid fa-eye"></i>23.141 Viewes</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Product End -->
+            <footer>
+                <div id="scrollToTopButton" class="page-up">
+                    <i class="bx bx-chevron-up"></i>
+                </div>
+                <div class="footer-main">
+                    <div class="logo">
+                        <img src="./source/img/logo.png" alt="" />
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="">Homepage</a></li>
+                            <li><a href="">Categories</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>
+                            Copyright © 2023 All rights reserved | This website made with ❤ by <mark><a href="https://www.facebook.com/angutboiz/">troandev</a></mark> from DNTU
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./js/main.js"></script>
+        <script>
+            const links = document.querySelectorAll("a")
+
+            links.forEach((link) => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault()
+                })
+            })
+        </script>
+    </body>
+</html>
