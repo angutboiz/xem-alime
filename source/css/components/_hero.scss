@@ -79,6 +79,7 @@
             height: 600px;
             object-fit: cover;
             border-radius: 5px;
+            filter: brightness(60%);
         }
     }
 
@@ -145,7 +146,7 @@
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 580px) {
     .hero {
         padding: 15px;
         .btn-change {
@@ -167,5 +168,11 @@
             width: 20px !important;
             height: 20px !important;
         }
+    }
+}
+
+@media only screen and (max-width: 1286px) {
+    .hero {
+        padding: 50px 30px;
     }
 }

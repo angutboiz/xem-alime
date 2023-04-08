@@ -124,10 +124,20 @@ $(document).ready(function () {
     })
 
     $(".product a").click(function () {
-        $(".fzf-not-found").show()
+        $(".fzf-not-found").addClass("animate__animated animate__fadeInDown").show()
     })
 
     $(".fzf-not-found span").click(function () {
         $(".fzf-not-found").hide()
     })
+})
+
+$(window).on("load", function () {
+    setTimeout(function () {
+        $(".spinner").fadeOut()
+        $("#preloader").delay(800).fadeOut("slow")
+        $("body").delay(800).css({
+            overflow: "visible",
+        })
+    }, 1000)
 })

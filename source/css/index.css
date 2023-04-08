@@ -113,7 +113,7 @@ header .row .mobile-menu-wrap:hover {
   background-color: #575656;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 580px) {
   header {
     padding: 20px 10px;
   }
@@ -125,6 +125,11 @@ header .row .mobile-menu-wrap:hover {
   }
   header .row {
     flex-direction: row;
+  }
+}
+@media only screen and (max-width: 1286px) {
+  header {
+    padding: 0 30px;
   }
 }
 .hero {
@@ -197,6 +202,7 @@ header .row .mobile-menu-wrap:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
+  filter: brightness(60%);
 }
 .hero .btn-change {
   position: absolute;
@@ -252,7 +258,7 @@ header .row .mobile-menu-wrap:hover {
   color: white;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 580px) {
   .hero {
     padding: 15px;
   }
@@ -268,6 +274,11 @@ header .row .mobile-menu-wrap:hover {
   .change-img button {
     width: 20px !important;
     height: 20px !important;
+  }
+}
+@media only screen and (max-width: 1286px) {
+  .hero {
+    padding: 50px 30px;
   }
 }
 .product {
@@ -508,7 +519,7 @@ header .row .mobile-menu-wrap:hover {
   margin-right: 5px;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 580px) {
   .product {
     padding: 15px;
   }
@@ -592,7 +603,7 @@ footer .footer-main .copyright p mark a {
   color: #e53637;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 580px) {
   footer .footer-main {
     flex-direction: column;
   }
@@ -821,41 +832,4 @@ ul {
 input {
   border: none;
   outline: none;
-}
-
-.fzf-not-found {
-  display: none;
-  position: fixed;
-  width: 500px;
-  height: 500px;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-.fzf-not-found img {
-  border-radius: 8px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.fzf-not-found span {
-  top: 0;
-  right: 13px;
-  font-size: 30px;
-  position: absolute;
-  cursor: pointer;
-}
-.fzf-not-found span:hover {
-  color: #e53637;
-}
-.fzf-not-found p {
-  position: absolute;
-  bottom: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #e53637;
-  font-size: 19px;
-  filter: drop-shadow(2px 1px 1px #e53637);
-  margin-left: 2px;
 }/*# sourceMappingURL=index.css.map */
