@@ -175,4 +175,11 @@
     .hero {
         padding: 50px 30px;
     }
+
+    #prev {
+        left: -10px !important;
+    }
+    #next {
+        right: -10px !important;
+    }
 }

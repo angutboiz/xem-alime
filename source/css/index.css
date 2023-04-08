@@ -280,6 +280,12 @@ header .row .mobile-menu-wrap:hover {
   .hero {
     padding: 50px 30px;
   }
+  #prev {
+    left: -10px !important;
+  }
+  #next {
+    right: -10px !important;
+  }
 }
 .product {
   background-color: #0b0c2a;
