@@ -32,11 +32,11 @@
             <header>
                 <div class="row">
                     <div class="logo">
-                        <a href="#"><img src="./source/img/logo.png" alt="" /></a>
+                        <a href="./index.html"><img src="./source/img/logo.png" alt="" /></a>
                     </div>
                     <div class="header-nav">
                         <ul class="homepage">
-                            <li class="active"><a href="">Homepage</a></li>
+                            <li class="active home"><a href="./index.html">Homepage</a></li>
                             <li class="categories">
                                 <a href="">Categories <i class="bx bx-chevron-down"></i> </a>
                                 <ul class="dropdown">
@@ -44,10 +44,11 @@
                                     <li id="scrollToPopular"><a href="">Popular</a></li>
                                     <li id="scrollToRecently"><a href="">Recently</a></li>
                                     <li id="scrollToLiveAction"><a href="">Live Action</a></li>
+                                    <li id=""><a href="./detail.html">Details</a></li>
                                 </ul>
                             </li>
-                            <li class="our-blog"><a href="#">Our Blog</a></li>
-                            <li class="contacts"><a href="#">Contacts</a></li>
+                            <li class="our-blog"><a href="./blog.html">Our Blog</a></li>
+                            <li class="contacts"><a href="./contact.html">Contacts</a></li>
                         </ul>
                     </div>
                     <div class="header-right">
@@ -71,7 +72,7 @@
                                     <li class="dr-m-nav" id="scrollToLiveActionM"><a href="">Live Action</a></li>
                                 </ul>
                             </li>
-                            <li class="dr-m"><a href="">Our Blog</a></li>
+                            <li class="dr-m"><a href="./blog.html">Our Blog</a></li>
                             <li class="dr-m"><a href="">Contacts</a></li>
                         </ul>
                     </div>
@@ -1035,15 +1036,7 @@
             </footer>
         </div>
 
+        <script></script>
         <script src="./js/main.js"></script>
-        <script>
-            const links = document.querySelectorAll("a")
-
-            links.forEach((link) => {
-                link.addEventListener("click", (event) => {
-                    event.preventDefault()
-                })
-            })
-        </script>
     </body>
 </html>

@@ -26,7 +26,6 @@ $(document).ready(function () {
 
         changeImg(stt)
     })
-
     $("#prev").click(function () {
         if (--stt < 0) {
             stt = endImg
@@ -109,9 +108,9 @@ $(document).ready(function () {
             }
         })
 
-        $(".product img").click(function () {
-            modal.addClass("animate__animated animate__fadeInDown").show()
-        })
+        // $(".product img").click(function () {
+        //     modal.addClass("animate__animated animate__fadeInDown").show()
+        // })
     }
     Modal()
 
@@ -123,12 +122,12 @@ $(document).ready(function () {
         $(".dropdown-mobile").toggle()
     })
 
-    $(".product a").click(function () {
-        $(".fzf-not-found").addClass("animate__animated animate__fadeInDown").show()
-    })
+    const imgs = document.querySelectorAll(".products img")
 
-    $(".fzf-not-found span").click(function () {
-        $(".fzf-not-found").hide()
+    imgs.forEach((img) => {
+        img.onclick = function () {
+            window.location.href = "./detail.html"
+        }
     })
 })
 

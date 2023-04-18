@@ -357,6 +357,13 @@ header .row .mobile-menu-wrap:hover {
   margin: 10px 30px 30px 0;
   width: 28%;
 }
+.product .row .products:hover img {
+  scale: 1.1;
+  cursor: pointer;
+}
+.product .row .products:hover a {
+  color: #e53637;
+}
 .product .row .header {
   display: flex;
   justify-content: space-between;
@@ -382,6 +389,7 @@ header .row .mobile-menu-wrap:hover {
   display: flex;
   position: relative;
   flex-direction: column;
+  overflow: hidden;
 }
 .product .row .product-item img {
   transition: all 0.2s ease-in;
@@ -389,11 +397,6 @@ header .row .mobile-menu-wrap:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
-}
-.product .row .product-item img:hover {
-  filter: brightness(70%);
-  scale: 1.1;
-  cursor: pointer;
 }
 .product .row .product-item .ep {
   position: absolute;
@@ -465,6 +468,14 @@ header .row .mobile-menu-wrap:hover {
   position: relative;
   margin: 0 0 20px;
   transition: 1s all;
+  overflow: hidden;
+}
+.product .row .filter__gallery .product-item-view:hover img {
+  scale: 1.1;
+  cursor: pointer;
+}
+.product .row .filter__gallery .product-item-view:hover a {
+  color: #e53637;
 }
 .product .row .filter__gallery .product-item-view img {
   transition: all 0.2s ease-in;
@@ -474,10 +485,6 @@ header .row .mobile-menu-wrap:hover {
      object-fit: cover;
   border-radius: 5px;
   filter: brightness(60%);
-}
-.product .row .filter__gallery .product-item-view img:hover {
-  scale: 1.1;
-  cursor: pointer;
 }
 .product .row .filter__gallery .product-item-view .ep {
   left: 10px;
@@ -500,6 +507,13 @@ header .row .mobile-menu-wrap:hover {
 .product .row .new-cmt .product-sidebar-cmt-item {
   margin-top: 30px;
   display: flex;
+}
+.product .row .new-cmt .product-sidebar-cmt-item:hover img {
+  scale: 1.1;
+  cursor: pointer;
+}
+.product .row .new-cmt .product-sidebar-cmt-item:hover a {
+  color: #e53637;
 }
 .product .row .new-cmt .product-sidebar-cmt-item .pic img {
   transition: all 0.2s ease-in;
@@ -555,7 +569,8 @@ header .row .mobile-menu-wrap:hover {
 }
 footer {
   background-color: #070720;
-  height: 200px;
+  height: 300px;
+  padding: 0 200px;
 }
 footer .page-up {
   width: 50px;
@@ -578,7 +593,7 @@ footer .page-up:hover {
 }
 footer .footer-main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 footer .footer-main .nav ul {
@@ -614,11 +629,16 @@ footer .footer-main .copyright p mark a {
     flex-direction: column;
   }
   footer .footer-main .nav ul li {
-    margin: 20px 10px;
+    margin: 20px 8px;
   }
   footer .footer-main .copyright {
     width: 100% !important;
     padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 1286px) {
+  footer {
+    padding: 0 30px;
   }
 }
 .modal-login {
@@ -816,6 +836,736 @@ footer .footer-main .copyright p mark a {
     padding-top: 30px;
   }
 }
+.breadcrumb-option {
+  background-color: #0b0c2a;
+  color: #fff;
+  padding: 0 200px;
+  margin-top: 35px;
+  font-size: 15px;
+}
+.breadcrumb-option a {
+  color: #fff;
+  margin: 0 2px;
+}
+.breadcrumb-option i {
+  transform: translateY(3.4px);
+  font-size: 20px;
+}
+.breadcrumb-option i:first-child {
+  color: red;
+}
+.breadcrumb-option span {
+  color: #b7b7b7;
+}
+
+.anime-details {
+  padding: 60px 200px;
+  color: #fff;
+}
+.anime-details .anime-content {
+  display: flex;
+}
+.anime-details .anime-content .anime-content-left {
+  width: 25%;
+  height: 440px;
+  position: relative;
+  padding: 15px;
+}
+.anime-details .anime-content .anime-content-left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.anime-details .anime-content .anime-content-left .comment,
+.anime-details .anime-content .anime-content-left .view {
+  position: absolute;
+  font-size: 13px;
+  background-color: #3d3d3d;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.anime-details .anime-content .anime-content-left .comment i,
+.anime-details .anime-content .anime-content-left .view i {
+  margin-right: 5px;
+}
+.anime-details .anime-content .anime-content-left .comment {
+  left: 25px;
+  bottom: 40px;
+}
+.anime-details .anime-content .anime-content-left .view {
+  right: 25px;
+  bottom: 40px;
+}
+.anime-details .anime-content .anime-content-right {
+  width: 75%;
+  padding: 15px;
+}
+.anime-details .anime-content .anime-content-right .name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.anime-details .anime-content .anime-content-right .name .tittle {
+  width: 75%;
+}
+.anime-details .anime-content .anime-content-right .name .tittle h3 {
+  margin-bottom: 13px;
+  font-size: 30px;
+}
+.anime-details .anime-content .anime-content-right .name .tittle span {
+  color: #b7b7b7;
+}
+.anime-details .anime-content .anime-content-right .name .rating {
+  text-align: center;
+}
+.anime-details .anime-content .anime-content-right .name .rating .star {
+  font-size: 30px;
+}
+.anime-details .anime-content .anime-content-right .name .rating .star i {
+  color: #e89f12;
+}
+.anime-details .anime-content .anime-content-right .name .rating .vote span {
+  font-size: 18px;
+  color: #b7b7b7;
+}
+.anime-details .anime-content .anime-content-right p {
+  font-size: 18px;
+  color: #b7b7b7;
+  line-height: 27px;
+}
+.anime-details .anime-content .anime-content-right .type {
+  display: flex;
+  margin: 15px 0 30px;
+  color: #b7b7b7;
+}
+.anime-details .anime-content .anime-content-right .type .left {
+  margin-right: 30px;
+}
+.anime-details .anime-content .anime-content-right .type ul li {
+  padding: 8px 0 8px 15px;
+  position: relative;
+  color: #fff;
+}
+.anime-details .anime-content .anime-content-right .type ul li span {
+  margin-right: 15px;
+  width: 115px;
+  display: inline-block;
+  color: #b7b7b7;
+}
+.anime-details .anime-content .anime-content-right .type ul li::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #b7b7b7;
+  top: 15.8px;
+  left: 0;
+}
+.anime-details .anime-content .anime-content-right .btn .follow-btn {
+  font-size: 13px;
+  color: #ffffff;
+  background: #e53637;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+.anime-details .anime-content .anime-content-right .btn .watch-btn span {
+  font-size: 13px;
+  color: #ffffff;
+  background: #e53637;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  border-radius: 4px 0 0 4px;
+  margin-right: 1px;
+}
+.anime-details .anime-content .anime-content-right .btn .watch-btn i {
+  font-size: 20px;
+  display: inline-block;
+  background: #e53637;
+  color: #ffffff;
+  padding: 12px 1px;
+  transform: translateY(4px);
+  border-radius: 0 4px 4px 0;
+}
+.anime-details .section-title {
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  margin: 40px 0;
+  font-size: 24px;
+}
+.anime-details .section-title::before {
+  position: absolute;
+  left: 0;
+  top: -6px;
+  height: 32px;
+  width: 4px;
+  background: #e53637;
+  content: "";
+}
+.anime-details .review-detail-side-bar {
+  display: flex;
+}
+.anime-details .review-detail-side-bar .review {
+  width: 66%;
+  padding-right: 30px;
+}
+.anime-details .review-detail-side-bar .review .item {
+  display: flex;
+  margin-bottom: 15px;
+}
+.anime-details .review-detail-side-bar .review .item .pic {
+  overflow: hidden;
+  margin-right: 20px;
+  width: 58px;
+}
+.anime-details .review-detail-side-bar .review .item .pic img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.anime-details .review-detail-side-bar .review .item .text {
+  background-color: #1d1e39;
+  border-radius: 10px;
+  padding: 18px 30px 16px 20px;
+  position: relative;
+  width: 100%;
+}
+.anime-details .review-detail-side-bar .review .item .text h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.anime-details .review-detail-side-bar .review .item .text p {
+  color: #b7b7b7;
+}
+.anime-details .review-detail-side-bar .review .item .text span {
+  color: #b7b7b7;
+}
+.anime-details .review-detail-side-bar .review .item .text::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: #1d1e39;
+  top: 14px;
+  left: -4px;
+}
+.anime-details .review-detail-side-bar .your-comment textarea {
+  width: 100%;
+  height: 110px;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 20px;
+  outline: none;
+  color: #b7b7b7;
+  resize: none;
+}
+.anime-details .review-detail-side-bar .your-comment textarea::-moz-placeholder {
+  color: #b7b7b7;
+}
+.anime-details .review-detail-side-bar .your-comment textarea::placeholder {
+  color: #b7b7b7;
+}
+.anime-details .review-detail-side-bar .your-comment textarea:focus {
+  outline: 2px solid #e53637;
+}
+.anime-details .review-detail-side-bar .your-comment button {
+  font-size: 11px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #e53637;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 2px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.anime-details .review-detail-side-bar .detail-side-bar {
+  width: 33%;
+}
+.anime-details .review-detail-side-bar .detail-side-bar .ep {
+  background-color: #e53637;
+  font-size: 13px;
+  padding: 2px 12px;
+  border-radius: 4px;
+}
+.anime-details .review-detail-side-bar .detail-side-bar .comment,
+.anime-details .review-detail-side-bar .detail-side-bar .view {
+  font-size: 13px;
+  background-color: #3d3d3d;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+.anime-details .review-detail-side-bar .detail-side-bar .comment i,
+.anime-details .review-detail-side-bar .detail-side-bar .view i {
+  margin-right: 5px;
+}
+.anime-details .review-detail-side-bar .detail-side-bar .filter__gallery .product-item-view {
+  width: 100%;
+  position: relative;
+  margin: 0 0 20px;
+  transition: 1s all;
+  overflow: hidden;
+}
+.anime-details .review-detail-side-bar .detail-side-bar .filter__gallery .product-item-view:hover img {
+  scale: 1.1;
+  cursor: pointer;
+}
+.anime-details .review-detail-side-bar .detail-side-bar .filter__gallery .product-item-view:hover a {
+  color: #e53637;
+}
+.anime-details .review-detail-side-bar .detail-side-bar .filter__gallery .product-item-view img {
+  transition: all 0.2s ease-in;
+  width: 100%;
+  height: 190px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  filter: brightness(60%);
+}
+.anime-details .review-detail-side-bar .detail-side-bar .filter__gallery .product-item-view .ep {
+  left: 10px;
+}
+.anime-details .review-detail-side-bar .detail-side-bar .filter__gallery .product-item-view .ep,
+.anime-details .review-detail-side-bar .detail-side-bar .filter__gallery .product-item-view .view {
+  top: 10px;
+  position: absolute;
+}
+.anime-details .review-detail-side-bar .detail-side-bar .filter__gallery .product-item-view .view {
+  right: 10px;
+}
+.anime-details .review-detail-side-bar .detail-side-bar .filter__gallery .product-item-view h5 a {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #fff;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 580px) {
+  .breadcrumb-option {
+    padding: 0 30px;
+    width: 100%;
+  }
+  .anime-details {
+    padding: 0 30px;
+  }
+  .anime-content {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .anime-content .anime-content-left {
+    width: 100% !important;
+    padding: unset !important;
+  }
+  .anime-content .anime-content-right {
+    width: 100% !important;
+    padding: unset !important;
+    margin-top: 40px;
+  }
+  .anime-content .anime-content-right .name {
+    flex-direction: column;
+  }
+  .anime-content .anime-content-right .name .tittle {
+    width: 100% !important;
+  }
+  .anime-content .anime-content-right .rating {
+    text-align: left !important;
+    margin-top: 10px;
+  }
+  .anime-content .anime-content-right .btn .follow-btn {
+    margin-right: 35px !important;
+  }
+  .review-detail-side-bar {
+    flex-direction: column;
+  }
+  .review-detail-side-bar .review {
+    width: 100% !important;
+    padding-right: unset !important;
+  }
+  .review-detail-side-bar .review .pic {
+    width: 68px !important;
+  }
+  .review-detail-side-bar .detail-side-bar {
+    width: 100% !important;
+  }
+  footer {
+    padding: 0 30px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 1286px) {
+  .breadcrumb-option,
+  .anime-details {
+    padding: 0 30px;
+  }
+}
+.normal-breadcrumb {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.normal-breadcrumb img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(60%);
+}
+.normal-breadcrumb .sub {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+}
+.normal-breadcrumb .sub h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  margin-bottom: 22px;
+  font-size: 48px;
+}
+.normal-breadcrumb .sub p {
+  font-size: 24px;
+}
+
+.w-100 {
+  width: 100%;
+  height: 570px;
+}
+
+.w-50 {
+  width: 49.5%;
+  height: 283px;
+}
+
+.blog-item {
+  padding: 0 200px;
+  margin: 40px 0 80px;
+  display: flex;
+}
+.blog-item .img .sub-item {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  display: block;
+}
+.blog-item .img .sub-item i {
+  color: #e53637;
+  margin-right: 5px;
+}
+.blog-item img {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+}
+.blog-item .right .img {
+  display: flex;
+}
+
+@media only screen and (max-width: 580px) {
+  .blog-item {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+  .w-100 {
+    width: 100%;
+    height: 570px;
+  }
+  .w-50 {
+    width: 49.5%;
+    height: 283px;
+  }
+}
+@media only screen and (max-width: 1286px) {
+  .blog-item {
+    padding: 0 10px;
+  }
+}
+.blog-details {
+  color: #fff;
+  margin-top: 80px;
+}
+.blog-details h6 {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.blog-details h6 span {
+  color: #b7b7b7;
+}
+.blog-details h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.blog-details .action {
+  width: 610px;
+  text-align: center;
+  margin: 0 auto;
+}
+.blog-details .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 60px 10px;
+}
+.blog-details .social a {
+  font-size: 15px;
+  width: 20%;
+  margin: 10px;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-details .social a i {
+  margin-right: 8px;
+}
+.blog-details .social .twitter {
+  background-color: #39a1f2;
+}
+.blog-details .social .linkedin {
+  background-color: #0372b1;
+}
+.blog-details .social .pinterest {
+  background-color: #ca2027;
+}
+.blog-details .social .facebook {
+  background-color: #3b5998;
+}
+.blog-details .pic-center {
+  padding: 0 200px;
+}
+.blog-details .pic-center img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+.blog-details .text {
+  width: 610px;
+  margin: 20px auto;
+}
+.blog-details .text p {
+  line-height: 30px;
+  font-size: 17px;
+  margin: 15px 0;
+}
+.blog-details .text h4 {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+.blog-details .text img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.blog-details .tag {
+  width: 610px;
+  margin: 40px auto;
+}
+.blog-details .tag a {
+  color: #b7b7b7;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  padding: 6px 15px;
+}
+.blog-details .btn {
+  display: flex;
+  justify-content: space-between;
+  width: 610px;
+  margin: 40px auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px 0;
+}
+.blog-details .btn .prev,
+.blog-details .btn .next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.blog-details .btn .prev i,
+.blog-details .btn .next i {
+  margin: 0 4px;
+  color: #b7b7b7;
+}
+.blog-details .btn .prev h5,
+.blog-details .btn .next h5 {
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+.blog-details .comments {
+  width: 610px;
+  margin: 40px auto;
+}
+.blog-details .comments h4 {
+  font-size: 24px;
+}
+.blog-details .comments .cmt-item {
+  display: flex;
+  margin-top: 30px;
+}
+.blog-details .comments .cmt-item .pic {
+  overflow: hidden;
+  width: 90px;
+  margin-right: 40px;
+}
+.blog-details .comments .cmt-item .pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-details .comments .cmt-item .text-item span,
+.blog-details .comments .cmt-item .text-item p {
+  color: #b7b7b7;
+  line-height: 22px;
+}
+.blog-details .comments .cmt-item .text-item h5 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+.blog-details .comments .cmt-item .text-item p {
+  margin-bottom: 30px;
+}
+.blog-details .comments .cmt-item .text-item a {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 20px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  margin-right: 14px;
+  color: #fff;
+}
+.blog-details .leave-a-cmt {
+  width: 610px;
+  margin: 80px auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 0;
+}
+.blog-details .leave-a-cmt h4 {
+  font-size: 24px;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+.blog-details .leave-a-cmt .input-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-details .leave-a-cmt .input-2 input {
+  width: 47%;
+  padding: 16px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #b7b7b7;
+}
+.blog-details .leave-a-cmt .input textarea {
+  margin-top: 30px;
+  width: 100%;
+  height: 150px;
+  padding: 16px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #b7b7b7;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.blog-details .leave-a-cmt button {
+  font-size: 13px;
+  color: #ffffff;
+  background: #e53637;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  letter-spacing: 2px;
+  padding: 12px 30px;
+  margin-top: 30px;
+}
+
+.ml-40 {
+  margin-left: 80px;
+}
+
+@media only screen and (max-width: 1286px) {
+  .pic-center {
+    padding: 0 30px !important;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .action {
+    width: 100% !important;
+  }
+  .social a {
+    width: 50% !important;
+  }
+  .comment-content {
+    padding: 0 30px !important;
+  }
+  .comment-content .text {
+    width: 100%;
+  }
+  .tag,
+  .btn,
+  .comments,
+  .leave-a-cmt {
+    padding: 0 30px !important;
+  }
+  .btn {
+    flex-wrap: wrap;
+  }
+  .btn .prev,
+  .btn .next {
+    margin: 20px;
+  }
+  .comments .pic {
+    margin-right: 15px !important;
+  }
+  .text-item {
+    width: 50% !important;
+  }
+  .ml-40 {
+    margin-left: unset !important;
+  }
+  .leave-a-cmt {
+    width: 100% !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -825,6 +1575,7 @@ footer .footer-main .copyright p mark a {
 body {
   font-size: 15px;
   font-family: "Mulish", sans-serif;
+  background-color: #0b0c2a;
 }
 
 a {

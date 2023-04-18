@@ -76,6 +76,15 @@
         .products {
             margin: 10px 30px 30px 0;
             width: 28%;
+
+            &:hover img {
+                scale: 1.1;
+                cursor: pointer;
+            }
+
+            &:hover a {
+                color: #e53637;
+            }
         }
 
         .header {
@@ -108,17 +117,14 @@
             display: flex;
             position: relative;
             flex-direction: column;
+            overflow: hidden;
+
             img {
                 transition: all 0.2s ease-in;
 
                 width: 100%;
                 object-fit: cover;
                 border-radius: 5px;
-                &:hover {
-                    filter: brightness(70%);
-                    scale: 1.1;
-                    cursor: pointer;
-                }
             }
 
             .ep {
@@ -206,7 +212,16 @@
                 position: relative;
                 margin: 0 0 20px;
                 transition: 1s all;
+                overflow: hidden;
 
+                &:hover img {
+                    scale: 1.1;
+                    cursor: pointer;
+                }
+
+                &:hover a {
+                    color: #e53637;
+                }
                 img {
                     transition: all 0.2s ease-in;
                     width: 100%;
@@ -214,10 +229,6 @@
                     object-fit: cover;
                     border-radius: 5px;
                     filter: brightness(60%);
-                    &:hover {
-                        scale: 1.1;
-                        cursor: pointer;
-                    }
                 }
 
                 .ep {
@@ -247,6 +258,15 @@
             .product-sidebar-cmt-item {
                 margin-top: 30px;
                 display: flex;
+
+                &:hover img {
+                    scale: 1.1;
+                    cursor: pointer;
+                }
+
+                &:hover a {
+                    color: #e53637;
+                }
 
                 .pic img {
                     transition: all 0.2s ease-in;

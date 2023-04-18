@@ -1,0 +1,296 @@
+.blog-details {
+    color: #fff;
+    margin-top: 80px;
+    h6 {
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        span {
+            color: #b7b7b7;
+        }
+    }
+    h2 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+    }
+
+    .action {
+        width: 610px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 60px 10px;
+
+        a {
+            font-size: 15px;
+            width: 20%;
+            margin: 10px;
+            padding: 10px 25px;
+            color: #fff;
+            border-radius: 2px;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            i {
+                margin-right: 8px;
+            }
+        }
+
+        .twitter {
+            background-color: #39a1f2;
+        }
+        .linkedin {
+            background-color: #0372b1;
+        }
+        .pinterest {
+            background-color: #ca2027;
+        }
+        .facebook {
+            background-color: #3b5998;
+        }
+    }
+
+    .pic-center {
+        padding: 0 200px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    .comment-content {
+    }
+
+    .text {
+        width: 610px;
+        margin: 20px auto;
+
+        p {
+            line-height: 30px;
+            font-size: 17px;
+            margin: 15px 0;
+        }
+
+        h4 {
+            font-size: 24px;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+
+    .tag {
+        width: 610px;
+        margin: 40px auto;
+        a {
+            color: #b7b7b7;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            padding: 6px 15px;
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        width: 610px;
+        margin: 40px auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 40px 0;
+
+        .prev,
+        .next {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            i {
+                margin: 0 4px;
+                color: #b7b7b7;
+            }
+
+            h5 {
+                font-size: 17px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .comments {
+        width: 610px;
+        margin: 40px auto;
+        h4 {
+            font-size: 24px;
+        }
+
+        .cmt-item {
+            display: flex;
+            margin-top: 30px;
+
+            .pic {
+                overflow: hidden;
+                width: 90px;
+                margin-right: 40px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+
+                    object-fit: cover;
+                }
+            }
+            .text-item {
+                span,
+                p {
+                    color: #b7b7b7;
+                    line-height: 22px;
+                }
+
+                h5 {
+                    margin: 10px 0;
+                    font-size: 20px;
+                }
+
+                p {
+                    margin-bottom: 30px;
+                }
+
+                a {
+                    background: rgba(255, 255, 255, 0.1);
+                    padding: 6px 20px;
+                    letter-spacing: 2px;
+                    border-radius: 2px;
+                    margin-right: 14px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .leave-a-cmt {
+        width: 610px;
+        margin: 80px auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 30px 0;
+        h4 {
+            font-size: 24px;
+            margin: 0 0 20px;
+            font-weight: 600;
+        }
+        .input-2 {
+            display: flex;
+            justify-content: space-between;
+            input {
+                width: 47%;
+                padding: 16px;
+                font-size: 20px;
+                border-radius: 5px;
+                color: #b7b7b7;
+            }
+        }
+
+        .input {
+            textarea {
+                margin-top: 30px;
+                width: 100%;
+                height: 150px;
+                padding: 16px;
+                font-size: 20px;
+                border-radius: 5px;
+                color: #b7b7b7;
+                border: none;
+                outline: none;
+                resize: none;
+            }
+        }
+        button {
+            font-size: 13px;
+            color: #ffffff;
+            background: #e53637;
+            font-weight: 700;
+            border: none;
+            border-radius: 2px;
+            letter-spacing: 2px;
+            padding: 12px 30px;
+            margin-top: 30px;
+        }
+    }
+}
+
+.ml-40 {
+    margin-left: 80px;
+}
+
+@media only screen and (max-width: 1286px) {
+    .pic-center {
+        padding: 0 30px !important;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .action {
+        width: 100% !important;
+    }
+    .social a {
+        width: 50% !important;
+    }
+
+    .comment-content {
+        padding: 0 30px !important;
+
+        .text {
+            width: 100%;
+        }
+    }
+
+    .tag,
+    .btn,
+    .comments,
+    .leave-a-cmt {
+        padding: 0 30px !important;
+    }
+
+    .btn {
+        flex-wrap: wrap;
+
+        .prev,
+        .next {
+            margin: 20px;
+        }
+    }
+
+    .comments .pic {
+        margin-right: 15px !important;
+    }
+    .text-item {
+        width: 50% !important;
+    }
+
+    .ml-40 {
+        margin-left: unset !important;
+    }
+
+    .leave-a-cmt {
+        width: 100% !important;
+    }
+}

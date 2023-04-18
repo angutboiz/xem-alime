@@ -5,6 +5,9 @@
 @import "./components/_product.scss";
 @import "./components/_footer.scss";
 @import "./components/_formLogin.scss";
+@import "./components/_detail";
+@import "./components/_blog";
+@import "./components/_contact.scss";
 
 * {
     margin: 0;
@@ -15,6 +18,7 @@
 body {
     font-size: 15px;
     font-family: "Mulish", sans-serif;
+    background-color: #0b0c2a;
 }
 
 a {
